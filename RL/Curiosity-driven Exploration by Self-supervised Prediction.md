@@ -1,18 +1,18 @@
-[#Curiosity-driven Exploration by Self-supervised Prediction] (https://proceedings.mlr.press/v70/pathak17a/pathak17a.pdf)
+# [Curiosity-driven Exploration by Self-supervised Prediction] (https://proceedings.mlr.press/v70/pathak17a/pathak17a.pdf)
  
 
-##What is the problem?
+## What is the problem?t
 Reinforcement learning relies on extrinsic rewards provided by the environment to optimize its behavior.  In many real world settings, this reward signal can be extremely sparse, making learning very inefficient.
 
-##What is the solution?
+## What is the solution?
 Learning by intrinsic motivation. Instead of relying solely on rewards provided by the environment, the agent has to have an intrinsic incentive to explore its environment.   
 
-##How?
+## How?
 By rewarding novel states. Usually if an agent is seeing new states, it means that is making progress compared to getting stuck if there is no reward to guide where to go and what to do. 
 We can measure if the state is novel by the ability of the model to predict the next state. In its comfort zone, the agent cant easily predict what happens next resulting, in contrary if the agent is in a novel territory. We can encourage this behavior of getting out the comfort zone by using the next state prediction error as a reward. 
 
 
-##Technical details
+## Technical details
 There are two main challenges:
 
 1. Predicting the next state in a high dimensional continuous space such as the pixel space of images is very challenging.
@@ -30,14 +30,14 @@ b) Minimizing action prediction error in the inverse model.
 c) Minimize the next state prediction error in the forward model. 
 
 
-##Results
+## Results
 - They evaluate on two games Supermario and VizDoom
 - They show improved performance (measured as the extrinsic reward per episode) when using ICM in sparse and very sparse reward settings. 
 - They also show in absence of any extrinsic rewards, the agent can learn interesting desirable behavior. (navigating the corridors, jumping over enemies )
 - They also experiment with agents trained using ICM in unseen environments in three settings (as is, fine-tuned on the new environment with curiosity only, fine-tuned with extrinsic rewards. The results of this highly depend on the correlation between the pretrained environment and the new environment. 
 
 
-##Opinions & takeaways 
+## Opinions & takeaways 
 - This is a cool a paper that attempts to implement the idea of curiosity observed in  biological entities into RL agents to incentivize learning in the absence of direct feedback from the environment.
 - Again self-supervised learning comes to the rescue to help us embed concepts into artificial neural networks.
 - The setup here largely relies on actions (to learn the feature space, and to predict next state). This assumes that there is continuous interaction with environment to learn. What if that is not the case. How can we use intrinsic rewards if 
