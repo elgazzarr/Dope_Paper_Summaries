@@ -1,4 +1,4 @@
-# Curiosity-driven Exploration by Self-supervised Prediction (ICML 2017). [link](https://proceedings.mlr.press/v70/pathak17a/pathak17a.pdf)
+# [Curiosity-driven Exploration by Self-supervised Prediction (ICML 2017)](https://proceedings.mlr.press/v70/pathak17a/pathak17a.pdf)
  
 ## What is the problem?
 Reinforcement learning relies on extrinsic rewards provided by the environment to optimize its behavior.  In many real world settings, this reward signal can be extremely sparse, making learning very inefficient.
@@ -16,7 +16,7 @@ There are two main challenges:
 
 1. Predicting the next state in a high dimensional continuous space such as the pixel space of images is very challenging.
 2. There are a lot of things happening in the environment that we do not care about, are very stochastic, and even impossible to predict. An agent rewarded when it cannot predict its input can get stuck in these stochastic states. e.g. watching a noisy tv (or browsing social media aimlessly)
-3. 
+
 **To solve these challenges, the paper propose to learn to predict next states in a _feature space_ that is _only affected by or has an effect on its actions._** Specifically, they design an intrinsic curiosity module trained by self-supervised learning to obtain the intrinsic reward. 
 ![utils/images/icm.png]
 
