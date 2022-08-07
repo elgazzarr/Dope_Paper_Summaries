@@ -1,4 +1,4 @@
-[#Curiosity-driven Exploration by Self-supervised Prediction] (https://proceedings.mlr.press/v70/pathak17a/pathak17a.pdf)
+Curiosity-driven Exploration by Self-supervised Prediction (https://proceedings.mlr.press/v70/pathak17a/pathak17a.pdf)
  
 
 ##What is the problem?
@@ -8,6 +8,7 @@ Reinforcement learning relies on extrinsic rewards provided by the environment t
 Learning by intrinsic motivation. Instead of relying solely on rewards provided by the environment, the agent has to have an intrinsic incentive to explore its environment.   
 
 ##How?
+
 By rewarding novel states. Usually if an agent is seeing new states, it means that is making progress compared to getting stuck if there is no reward to guide where to go and what to do. 
 We can measure if the state is novel by the ability of the model to predict the next state. In its comfort zone, the agent cant easily predict what happens next resulting, in contrary if the agent is in a novel territory. We can encourage this behavior of getting out the comfort zone by using the next state prediction error as a reward. 
 
