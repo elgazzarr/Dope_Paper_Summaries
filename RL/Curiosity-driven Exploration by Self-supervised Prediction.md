@@ -19,7 +19,7 @@ There are two main challenges:
 
 **To solve these challenges, the paper propose to learn to predict next states in a _feature space_ that is _only affected by or has an effect on its actions._** Specifically, they design an intrinsic curiosity module trained by self-supervised learning to obtain the intrinsic reward. 
 
-![][utils/images/ICM.png]
+![ICM](utils/images/ICM.png)
 
 1. The inverse model takes the state and next state, extract feature representations, use these that features representations to predict the action that the agent took to make this transition. This makes the feature representations \Phi only contain releveant information for the action.
 2. The forward model takes the representations of the current state and the action to predict the representation of the next state, The difference between the predicted next state representation and the ground truth next state representations is used as the intrinsic reward.
