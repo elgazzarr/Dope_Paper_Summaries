@@ -1,20 +1,20 @@
-[# GRAND: Graph Neural Diffusion (ICML 2021)](http://proceedings.mlr.press/v139/chamberlain21a/chamberlain21a.pdf)
+# [GRAND: Graph Neural Diffusion (ICML 2021)](http://proceedings.mlr.press/v139/chamberlain21a/chamberlain21a.pdf)
 
 
 
 ## What is the problem?
 
-There is not really a problem here. This is a new angle to view Graph neural networks as continuous diffusion processes and enable developing a new family of GNNs.
+There is not really a problem here. This is a new angle to view Graph neural networks as continuous diffusion processes enabling the development of a new family of GNNs.
 
 
 ## What is the solution?
 
-Message passing is a diffusion process on some manifold. We can derive a partial differential equation using the general form of Fourier's law of heat equation and continuity equation which states the change of heat (flux) is equal the divergence of  diffusivity times the change in position (or diffusivity times Laplacian of X).    
+Message passing is a diffusion process on some manifold. We can derive a partial differential equation using the general form of Fourier's law of heat equation and continuity equation which states the change of heat (flux) is equal the divergence of diffusivity times the change in position (or diffusivity times Laplacian of X).    
 
 
 ## How?
 
-The driven pde can be solved using different methods. Standard GCN treat this as an explicit Euler method with iterations analogous to the number of layers. The formulation of the GNN as a PDE can enable is to use a wide array of more advanced PDE solvers where you have control over stability and uses and adaptive step size.  
+The driven pde can be solved using different methods. Standard GCN solve this as an explicit Euler method with iterations analogous to the number of layers. The formulation of the GNN as a PDE can enable the to use a wide array of more advanced PDE solvers where you have control over stability and uses and adaptive step size.  
 
 
 
@@ -24,7 +24,6 @@ The driven pde can be solved using different methods. Standard GCN treat this as
 - GRAND non-linear uses adaptive multi-step solvers 
 - The graph is already given spatially discretized (We have the graph structure) but you can use the graph rewiring (using different thresholds) find the pde solution over all possible graph structures. This the version GRAND-nl-rw and I imagine it is much more robust. 
 - They use the same set of weights across all iterations/layers.
-
 
 
 
