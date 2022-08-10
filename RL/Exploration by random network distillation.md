@@ -1,4 +1,4 @@
-[# Exploration by random network distillation (ICLR 2019)](https://arxiv.org/pdf/1810.12894.pdf)
+# [Exploration by random network distillation (ICLR 2019)](https://arxiv.org/pdf/1810.12894.pdf)
 
 
 
