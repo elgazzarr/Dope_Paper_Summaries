@@ -2,7 +2,7 @@
 
 ## What is the probelm?
 
-There are alot of dynamical systems out there (especially in science) where we can't drive the govering equations (not alone solve them) that describe the system evolution from first princibles (e.g. conservation laws, phsyics principles). We would like to find a way to discover these equations purely from observations.
+There are alot of dynamical systems out there (especially in science) where we can't derive the governing equations (not alone solve them) that describe the system evolution from first princibles (e.g. conservation laws, phsyics principles). We would like to find a way to discover these equations purely from observations.
 
 
 ## What is the solution?
@@ -11,7 +11,7 @@ Here they propose to use a sparse regression method to find the terms of the par
 
 ## How?
 
-They create a library (A large matrix) of all possible terms in the PDE up to a certain order derivative as columns, and they use this matrix to find a sparse vector of coeffecient that best descibe the data measurments using sparse regression.
+They create a library (A large matrix) of all possible terms in the PDE up to a certain order derivative as columns, and they use this matrix to find a sparse vector of coeffecients that best descibe the data measurments using sparse regression.
 
 ![dd](../utils/images/dd-pde.jpeg)
 
