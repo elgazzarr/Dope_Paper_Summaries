@@ -1,5 +1,4 @@
-# [Discovering Symbolic Models from Deep Learning
-with Inductive Biases](https://proceedings.neurips.cc/paper/2020/file/c9f2f917078bd2db12f23c3b413d9cba-Paper.pdf)
+# [Discovering Symbolic Models from Deep Learning with Inductive Biases](https://proceedings.neurips.cc/paper/2020/file/c9f2f917078bd2db12f23c3b413d9cba-Paper.pdf)
 
 
 ## What is the problem?
