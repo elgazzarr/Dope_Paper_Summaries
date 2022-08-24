@@ -1,9 +1,9 @@
-# [Diffusion Improves Graph Learning](https://arxiv.org/pdf/1911.05485.pdf)
+# [Diffusion Improves Graph Learning (Neurips 2019)](https://arxiv.org/pdf/1911.05485.pdf)
 
 
 ## What is the problem?
 
-Spatial Graph Convolution Neural Networks uses messeage passing between direct (one-hop) neighbors to learn node features. While higher order neigbourhood information can be incroporated by adding more layers, learning at each layer is still limited by only direct niegbours of the node. Further, often in real world graphs, the graph structure is noisy and sometimes arbitarly defined which 
+Spatial Graph Convolution Neural Networks use messeage passing between direct (one-hop) neighbours to learn node features. While higher order neigbourhood information can be incroporated by adding more layers, learning at each layer is still limited by only direct neighbours of the node. Further, often in real world graphs, the graph structure is noisy and sometimes arbitarly defined which 
 can further hinder learning. 
 
 ## What is the solution?
