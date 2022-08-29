@@ -7,7 +7,7 @@ Deep neural networks are not incroportated by priors about the phsyical laws of 
 
 ## What is the solution?
 
-Well, equid the neural network with physical priors. Here they lean onto Hamiltonian mechanics, which relates systems coordianties into a scalar function (The hamiltonina, usualy indicate energy or energy-like value). The evolution of the systems coordiantes in time can be described as the derivative of the hamiltonian with respect to these coordiantes.
+Well, equip the neural network with physical priors. Here they lean onto Hamiltonian mechanics, which relates systems coordianties into a scalar function (The hamiltonian, usualy indicate energy or energy-like value). The evolution of the system coordiantes in time can be described as the derivative of the hamiltonian with respect to these coordiantes.
 
 
 ## How?
